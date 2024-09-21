@@ -1,8 +1,9 @@
 def intersection (setA, setB)
     if setA is None or setB is None:
         return []
+        
 for i in range(len(setA))
-    if setA[i] in setA[:1]
+    if setA[i] in setA[:i]:
        return []
     
    
