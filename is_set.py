@@ -1,5 +1,14 @@
-def match(is_set, test_set):
-    if len(is_set) != len(test_set):
+def is_set(data):
+    if data is None:
         return False
-    return all(is_set[i] == test_set[i] for i in range(len(is_set)))
+
+if len(data) == 0:
+    return True
+
+for i in range(len(data)):
+    if data[i] in data[:i:]:
+        return False
+
+    return True
+
 
